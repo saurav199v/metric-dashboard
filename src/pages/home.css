@@ -1,5 +1,5 @@
 .home-container{
-    
+
     display: flex;
 }
 
@@ -15,11 +15,10 @@
 
 .home-overflow{
 
-    overflow: auto;
+    overflow: hidden;
 }
-
 .dashboard-container{
-    
+    overflow: auto;
     padding: 25px;
     background: #fbfbfd;
 }
