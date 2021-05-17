@@ -4,7 +4,7 @@ import '../insights/insights.css';
 import { Line } from 'react-chartjs-2';
 import TrendingUpIcon from '@material-ui/icons/TrendingUp';
 import TrendingDownIcon from '@material-ui/icons/TrendingDown';
-import { red } from '@material-ui/core/colors';
+
 
 
 
@@ -67,20 +67,21 @@ const options = {
   }
 };
 
+
 export default function Insights() {
 
   return (
-    <div class="insights-parent">
+    <div className="insights-parent">
       {
-        insights.map(insight =>
-          <div class="insights-container insights-align-center" >
+        insights.map((insight,index) =>
+          <div className="insights-container insights-align-center" key={index} >
             <div className="insights-inner-container">
               <div className="insights-realtime"> {insight.label}</div>
               <div className="insights-realtime-count">{insight.count}</div>
-              <div className={`insights-realtime-percentage-container , ${insight.trend === 'up' ? 'insights-realtime-percentage-green' : 'insights-realtime-percentage-red'}`}>
+              <div className={`'insights-realtime-percentage-container' , ${insight.trend === 'up' ? 'insights-realtime-percentage-green' : 'insights-realtime-percentage-red'}`}>
                 <span>{insight.percentage}</span>
                 <span className="insights-trend-icon">
-                  {insight.trend === 'up' ? <TrendingUpIcon fontSize="medium"></TrendingUpIcon> : <TrendingDownIcon fontSize="medium" ></TrendingDownIcon>}</span>
+                  {insight.trend === 'up' ? <TrendingUpIcon fontSize="small"></TrendingUpIcon> : <TrendingDownIcon fontSize="small" ></TrendingDownIcon>}</span>
               </div>
               <div className="insights-line-chart">
                 <Line data={getchartData(insight)} options={options} />

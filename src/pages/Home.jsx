@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Insights from '../components/insights/insights';
 import Visitors from '../components/visitors/visitors';
 import LeftNav from '../components/LeftNav/LeftNav';
@@ -8,7 +8,7 @@ import Traffic from '../components/Traffic/Traffic';
 import '../pages/home.css';
 
 export default function Home(){
-     const [showNav, updateShowNav] = useState(false);
+    
     return(
       
       <div className="home-container full-height home-full-width" >

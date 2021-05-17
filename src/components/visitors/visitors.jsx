@@ -58,18 +58,29 @@ const options = {
             display: false
         },
         tooltip: {
-            backgroundColor: '#ffffff',
+            backgroundColor:'#ffffff',
+            
             bodyColor: '#4c4d51',
-            //     bodySpacing: 2,
-
+         
+            titleFontColor: '#0a0a0a',
             caretSize: "10",
             cornerRadius: '10',
             callbacks: {
+                title : function(context){
+                    
+                        return context[0].label+" Januray";
+                },
                 label: function (context) {
                     var label = "Visitors";
 
-
+                     
                     return label;
+                },
+                afterLabel : function(context){
+                        
+                    return context.dataset.data[context.dataIndex];
+                },titleFontColor: function(context) {
+                    return 'black';
                 }
             }
         }
@@ -79,7 +90,7 @@ const options = {
 
 function generateArrayOfYears() {
     var max = new Date().getFullYear()
-    var min = max - 20;
+    var min = max - 5;
     var years = []
 
     for (var i = max; i >= min; i--) {
@@ -92,8 +103,7 @@ const months = ["January", "February", "March", "April", "May", "June", "July",
     "August", "September", "October", "November", "December"];
 const years = generateArrayOfYears();
 export default function Visitors() {
-    // const [months, setMonths] = useState(["January","February","March","April","May","June","July",
-    // "August","September","October","November","December"]);
+
     return (
         <div className="visitors-container">
             <div className="visitors-header-container">
@@ -101,9 +111,9 @@ export default function Visitors() {
                 <div>
                     <span className="visitors-month">
                         <select>
-                            {months.map(month => {
+                            {months.map((month,index) => {
 
-                                return <option> {month} </option>
+                                return <option key={index}> {month} </option>
                             })
 
 
@@ -113,9 +123,9 @@ export default function Visitors() {
                     </span>
                     <span>
                         <select>
-                            {years.map(year => {
+                            {years.map((year,index) => {
 
-                                return <option> {year} </option>
+                                return <option key={index}> {year} </option>
                             })
 
 
@@ -125,7 +135,7 @@ export default function Visitors() {
                     </span>
                 </div>
             </div>
-            <div class = "visitors-chart">
+            <div className = "visitors-chart">
                 <Bar data={data} options={options}></Bar>
             </div>
         </div>

@@ -14,11 +14,11 @@ export default function LeftNav() {
     return (
         <div>
             <div  className= "profile-home"> 
-            <HomeOutlinedIcon fontSize="medium"/>
+            <HomeOutlinedIcon />
             </div>
             <div className="profile-container"> 
                 <div className="avatar-container">
-                    <img src={profileImg} width="100%" />
+                    <img src={profileImg} alt={"profile"} width="100%" />
                     <div>
 
                     </div>
