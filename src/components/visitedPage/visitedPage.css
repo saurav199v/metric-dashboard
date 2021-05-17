@@ -9,7 +9,7 @@
 .visited-page-container{
 
  display: grid;
- grid-template-columns: 36% 12% 21% 28%;
+ grid-template-columns: 39% 12% 21% 28%;
  border-top : 1px solid #f0f2f7;
  align-items: center;
  font-weight: 500;
