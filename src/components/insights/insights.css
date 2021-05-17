@@ -1,0 +1,62 @@
+.insights-parent {
+    background-color: rgb(251 251 253);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+}
+
+.insights-container{
+    background-color: rgb(255, 255, 255);
+
+    width: 23.5%;
+    box-shadow: 0px 0px 5px 1px #b3aeae47;
+}
+
+
+.insights-align-center{
+ text-align: center;
+
+}
+
+
+
+.insights-inner-container{
+ padding : 20px;
+
+}
+
+
+.insights-line-chart{
+ 
+    height:55px;
+}
+
+.insights-realtime{
+    text-transform: uppercase;
+    color: #b3b4b9;
+    font-weight: 500;
+}
+
+.insights-realtime-count{
+   font-size: 30px;
+}
+
+.insights-realtime-percentage-container{
+    font-weight: 500;
+}
+
+.insights-realtime-percentage-green{
+    
+    color:#2fac42 ;
+}
+
+.insights-realtime-percentage-red{
+    color:#e8482b ;
+}
+.insights-trend-icon{
+    position: relative;
+    left: 10px;
+    top: 7px;
+}

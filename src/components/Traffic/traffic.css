@@ -1,0 +1,91 @@
+.traffic-parent-container{
+
+    padding :10px 15px;
+    min-height: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 5px 1px #b3aeae47;
+    font-size: 0.9rem;
+}
+.traffic-container{
+    height: 37px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    border-top : 1px solid #f0f2f7;
+    font-weight: 500;
+   
+   }
+   
+   .traffic-header{
+    color: #b8b9bd;
+    align-items: center;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+   }
+   
+.traffic-progress-container{
+    width: 100%;
+    position: relative;
+
+}
+   .traffic-progressbar
+   {
+   top:20%;
+    position: absolute;
+    height: 8px;
+    border-radius: 8px;
+    background-color: #0d65d9;
+    width: 0%;
+    z-index: 1;
+}
+
+.trafffic-progress-8{
+
+    width : 8%;
+}
+
+.trafffic-progress-20{
+  width :20%
+
+}
+
+
+.trafffic-progress-50{
+    width : 50%;
+  }
+
+  
+.trafffic-progress-75{
+    width :75%;
+  
+  }
+.traffic-progress-base{
+
+    top:20%;
+    position: relative;
+    height: 8px;
+    border-radius: 8px;
+    background-color: #ecedef;
+}
+   
+   .visited-page-row-container{
+   
+       display: grid;
+       grid-template-columns: 80% 20%;
+   
+   }
+   
+   .traffic-bar-container   {
+       display: grid;
+       grid-template-columns: 20% 80%;
+   }
+   
+   .visited-page-icon{
+       color: #b8b9bd;
+   }
+   
+   .visited-page-graph{
+   
+       position: relative;
+       width: 80px;
+       top: -18px;
+   }

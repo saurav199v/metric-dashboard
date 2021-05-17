@@ -1,0 +1,44 @@
+.home-container{
+
+    display: flex;
+}
+
+.home-left-nav{
+    width: 17%;
+    border-right : 1px solid #ebe4e4;
+}
+
+.home-full-width{
+   width : 100%;
+
+}
+
+.dashboard-container{
+    padding: 25px;
+    background: #fbfbfd;
+}
+
+
+
+.home-visitor-container{
+ /* height: 100%; */
+}
+
+.home-insights-container{
+ padding: 25px 0px;
+}
+
+.home-traffic-container{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+
+}
+
+.home-traffic-item-1{
+    flex-grow: 2;
+    margin-right: 25px;
+}
+.home-traffic-item-2{
+    flex-grow: 1;
+}

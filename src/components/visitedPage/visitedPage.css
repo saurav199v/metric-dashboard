@@ -1,0 +1,50 @@
+.visited-page-parent-container{
+    background-color: #ffffff;
+ 
+    padding : 10px 15px;
+    box-shadow: 0px 0px 5px 1px #b3aeae47;
+    font-size: 0.9rem;
+}
+
+.visited-page-container{
+
+ display: grid;
+ grid-template-columns: 30% 20% 20% 30%;
+ border-top : 1px solid #f0f2f7;
+ 
+ font-weight: 500;
+ 
+
+}
+
+.visted-page-header{
+    font-size: 0.8rem;
+    height: 36px;
+    align-items: center;
+    color: #b8b9bd;
+    text-transform: uppercase;
+}
+
+.visited-page-row-container{
+
+    display: grid;
+    grid-template-columns: 78% 18%;
+
+}
+
+.visited-page-row-graph-container{
+    display: grid;
+
+    grid-template-columns: 28% 68%;
+}
+
+.visited-page-icon{
+    color: #b8b9bd;
+}
+
+.visited-page-graph{
+
+    position: relative;
+    width: 80px;
+    top: -18px;
+}

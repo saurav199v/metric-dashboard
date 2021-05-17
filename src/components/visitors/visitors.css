@@ -1,0 +1,23 @@
+.visitors-container{
+ background: white;
+ box-shadow: 0px 0px 5px 1px #b3aeae47;
+
+}
+.visitors-header-container{
+
+    display: flex;
+    padding: 20px;
+    justify-content:  space-between;
+}
+.visitors-header-label{
+     font-weight: 500;
+}
+
+.visitors-month{
+
+    margin-right: 20px;
+}
+.visitors-chart{
+
+    padding: 0 10px;
+}
