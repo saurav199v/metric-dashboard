@@ -41,6 +41,8 @@ select{
 
   background-repeat: no-repeat;
   background-size: 15px;
+  color: #000000a3;
+  font-size: 0.8rem;
 }
 
 select:focus {

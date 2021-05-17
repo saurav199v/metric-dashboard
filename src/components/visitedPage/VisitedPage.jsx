@@ -40,7 +40,7 @@ export default function VisitedPage() {
 
     return (
         <div className="visited-page-parent-container">
-            <h2>Most visited Pages</h2>
+            <h2>Most Visited Pages</h2>
             <div class="visited-page-container visted-page-header" >
 
 

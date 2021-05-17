@@ -15,7 +15,7 @@ export default function Home(){
         <div className="home-left-nav" >
         <LeftNav />
           </div>
-        <div className = "home-full-width">
+        <div className = "home-full-width home-overflow">
           <Header />
           <div className="full-height dashboard-container" >
             <div className = "home-visitor-container">
